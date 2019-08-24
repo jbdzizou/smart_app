@@ -1,24 +1,29 @@
-# README
+# Docker & Rails app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
+This instructions build Rails news app with docker-compose
 
-Things you may want to cover:
+## Version
+Docker version 18.06.1-ce  
+docker-compose version 1.23.2  
+Rails ~> 5.2.3
+ruby 2.6.3  
+mysql 5.7  
 
-* Ruby version
+## Getting started
+1.git pull files  
+```
+$ git clone git@github.com:jbdzizou/smart_app.git  
+$ cd smart_app
+```
+2.container build  
+`$ docker-compose up -d`
 
-* System dependencies
+3.Command to execute DB creation task in Rails container  
+`$ docker-compose run web bundle exec rake db:create`
 
-* Configuration
+4.login to localhost(your chrome or etc)  
+http://localhost:3000 or http://address:3000
 
-* Database creation
+## Usage
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
