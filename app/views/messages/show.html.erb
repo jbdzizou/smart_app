@@ -5,7 +5,10 @@
       <p class="message-desc"><%= @message.description %></p>
 
       <div class="links btn-group">
-        <%= link_to "Back", root_path, class: "btn btn-default"  %>
+        <%= link_to "戻る", root_path, class: "btn btn-default"  %>
+        <%= link_to "修正", edit_message_path(@message), class: "btn btn-primary"%>
+        <%= link_to "削除", message_path(@message), method: :delete, 
+        data: { confirm: "削除します。よろしいですか？"}, class: "btn btn-danger" %>
       </div>
   </div>
 </div>
