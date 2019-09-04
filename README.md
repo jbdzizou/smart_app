@@ -22,6 +22,9 @@ $ cd smart_app
 3.Command to execute DB creation task in Rails container  
 `$ docker-compose run web bundle exec rake db:create`
 
+If the database already exists,Enter the following command
+`$ docker-compose run web rails db:migrate`
+
 4.login to localhost(your chrome or etc)  
 http://localhost:3000 or http://address:3000
 
