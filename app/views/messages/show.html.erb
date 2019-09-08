@@ -4,6 +4,12 @@
       <p class="message-posted-by"><%= time_ago_in_words(@message.created_at) %>前</p>
       <p class="message-desc"><%= @message.description %></p>
 
+     <h3 class="comment-section-header">コメント一覧:</h3>
+     <p><%= render @message.comments %></p>
+
+     <h3 class="reply-to-msg">コメントを書く:</h3>
+     <%= render 'comments/form' %>
+
       <div class="links btn-group">
         <%= link_to "戻る", root_path, class: "btn btn-default"  %>
         <%= link_to "修正", edit_message_path(@message), class: "btn btn-primary"%>
