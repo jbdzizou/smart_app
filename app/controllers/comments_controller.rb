@@ -12,8 +12,9 @@ class CommentsController < ApplicationController
     end
   end
 
-  privage
+  private
 
   def comment_params
     params.require(:comment).permit(:content)
+  end
 end
