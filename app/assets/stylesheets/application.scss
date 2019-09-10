@@ -1,2 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Vast+Shadow&display=swap');
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body {
+  background: -webkit-linear-gradient(40deg, #d1edf0 10%, #ecc8c6 100%);
+  background:    -moz-linear-gradient(40deg, #d1edf0 10%, #ecc8c6 100%);
+  background:     -ms-linear-gradient(40deg, #d1edf0 10%, #ecc8c6 100%);
+  background:      -o-linear-gradient(40deg, #d1edf0 10%, #ecc8c6 100%);
+  background:         linear-gradient(40deg, #d1edf0 10%, #ecc8c6 100%);
+  font-family: 'Vast Shadow', cursive;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Vast Shadow', cursive;
+  font-weight: 300;
+}
