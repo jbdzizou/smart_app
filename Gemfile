@@ -43,6 +43,7 @@ gem 'devise'
 gem 'jquery-rails'
 gem 'pkg-config', '~> 1.3'
 
+gem 'kaminari', '>= 1.1.1'
 
 
 group :development, :test do
