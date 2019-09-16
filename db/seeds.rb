@@ -7,7 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 # coding: utf-8
 if Rails.env == 'development'
-  5.times do |i|
-    Message.create(user_id: 1,title: "スベらない話 Part#{i+1}", description: "本文 Part#{i+1}")
-  end
+  # 5.times do |i|
+  #   Message.create(user_id: 1,title: "スベらない話 Part#{i+1}", description: "本文 Part#{i+1}")
+  # end
+
+  # Tag.create([
+  #   { name: 'Ruby' },
+  # ])
+
 end
