@@ -3,6 +3,10 @@
     <div class="message">
       <h2 class="message-title"><%= message.title %></h2>
       <%= link_to "Join News", message, class: "btn-custom" %>
+
+      <% message.tags.each do |tag| %>
+          <span class="badge badge-primary"><%= tag.name %></span>
+      <% end %>
     </div>
   </div>
 <% end %>
