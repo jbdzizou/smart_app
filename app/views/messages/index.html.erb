@@ -1,5 +1,5 @@
 <div class ="m1-auto messages__linkBox">
-<%= form_tag messages_path, method: :get, class: 'messages_searchForm' do %>
+<%= form_with url: messages_path, method: :get, class: 'messages_searchForm' do %>
   <%= select_tag :tag_id,
                  options_from_collection_for_select(Tag.all, :id, :name, params[:tag_id]),
                  {
