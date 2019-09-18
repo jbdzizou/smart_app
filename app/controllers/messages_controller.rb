@@ -3,7 +3,8 @@ class MessagesController < ApplicationController
   before_action :find_message, only: [:show, :edit, :update, :destroy]
 
   def index
-    @messages = Message.page(params[:page])
+    @messages = params[:tag_id].present? ? Tag.find(params[:tag_id]).messages : Message.all
+    @messages = @messages.page(params[:page])
   end
 
   def show
